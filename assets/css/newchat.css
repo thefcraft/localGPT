@@ -1,0 +1,36 @@
+.promptIdea-container{
+    width: 100%;
+    margin-bottom: 16px;
+}
+.promptIdea-item{
+    width: 290px;
+    height: 40px;
+    margin: 4px;
+
+    padding: 12px 16px;
+    border: 1px solid #565869;
+    border-radius: .75rem;
+
+
+    text-overflow: ellipsis;
+    overflow: hidden;
+    text-wrap: nowrap;
+    color: #838390;
+
+    cursor: pointer;
+}
+.promptIdea-item div{
+    color: #c5c5d2;
+}
+.promptIdea-item:hover{
+    background-color: #40414f;
+}
+
+@media only screen and (max-width: 700px) {
+    .promptIdea-item, .promptIdea-container div{
+        width: 100% !important;
+    }
+    .promptIdea-item:first-child{
+        display: none!important;
+    }
+  }

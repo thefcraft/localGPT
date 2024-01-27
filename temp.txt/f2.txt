@@ -1,0 +1,45 @@
+
+Certainly! I can demonstrate various text formatting options, including subscripts, superscripts, bold text, tables, and more. Let's create a simple example with a mathematical expression and a table:
+
+1. Mathematical Expression:
+   - Power of x: \(x^2\)
+   - Subscript of x: \(x_1\)
+   - Combination: \(y = x_1^{x^2}\)
+
+2. Table:
+   Let's create a table with two columns: "Item" and "Quantity."
+
+   ```
+   +--------------+----------+
+   |   Item       | Quantity |
+   +--------------+----------+
+   | Apples       |   10     |
+   | Oranges      |   5      |
+   | Bananas      |   8      |
+   +--------------+----------+
+   ```
+
+Now, let me format the above information accordingly:
+
+Mathematical Expression:
+- Power of x: \(x^2\)
+- Subscript of x: \(x_1\)
+- Combination: \(y = x_1^{x^2}\)
+
+Table:
+
+```
++--------------+----------+
+|   Item       | Quantity |
++--------------+----------+
+| Apples       |   10     |
+| Oranges      |   5      |
+| Bananas      |   8      |
++--------------+----------+
+```
+
+Feel free to ask if you have any specific text formatting requests or if you'd like to see more examples!
+
+
+
+

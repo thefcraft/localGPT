@@ -1,0 +1,66 @@
+.code{
+    /* display: flex;
+    flex-direction: column; */
+    background-color: black;
+    padding: 0px;
+    margin: 0px;
+    margin-top: 12px;
+    border-radius: 6px;
+    width: 100%;
+    font-family: SÃ¶hne Mono,Monaco,Andale Mono,Ubuntu Mono,monospace;
+}
+.code-head{
+    background-color: #202123;
+    display: flex;
+    border-radius: 6px 6px 0px 0px;
+}
+.code-head h4{
+    width: 100%;
+    padding: 4px 0px 4px 15px;
+    font-size: 12px;
+}
+.code-head-button{
+    width: 100px;
+    padding: 4px 15px 4px 0px;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    gap:4px;
+    cursor: pointer;
+}
+
+.code-content{
+    /* padding: 16px 0px 0px 0px;  remover this and use pre code padding !important */
+    width:614px;
+}
+pre code{
+    background-color: black !important;    
+    /* padding: 16px !important; */
+    padding-left: 16px !important;
+    padding-top: 16px !important;
+    padding-bottom: 16px !important;
+}
+pre code::-webkit-scrollbar {
+    height: 8px !important;             
+}
+pre code::-webkit-scrollbar-thumb {
+    background-color: #1a1a1a !important;
+    border-radius: 20px !important;
+}
+pre code::-webkit-scrollbar-thumb:hover{
+    background-color: #4d4d4d !important;
+}
+
+
+.color-blue{color: #2e95d3;}
+.color-red{color: #f22c3d;}
+.color-pink{color: #df3079;}
+.color-white{color: #ffffff;}
+.color-gray{color: #808080;}
+.color-yellow{color: #e9950c;}
+.color-green{color: #00a67d;}
+
+
+
+
+

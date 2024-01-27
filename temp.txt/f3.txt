@@ -1,0 +1,38 @@
+I can support a variety of text formatting options and styles. Here are some examples:
+
+1. **Bold Text:**
+   - **This is bold text.**
+
+2. **Italic Text:**
+   - *This is italic text.*
+
+3. **Underlined Text:**
+   - This is underlined text.
+
+4. **Strikethrough Text:**
+   - ~~This is strikethrough text.~~
+
+5. **Superscript and Subscript:**
+   - Superscript: 10^2
+   - Subscript: H₂O
+
+6. **Code:**
+   - `This is inline code.`
+
+7. **Quotation:**
+   - > This is a block quote.
+
+8. **Bullet Points:**
+   - Bullet 1
+   - Bullet 2
+   - Bullet 3
+
+9. **Numbered List:**
+   1. Item 1
+   2. Item 2
+   3. Item 3
+
+10. **Links:**
+    - [OpenAI](https://www.openai.com/)
+
+Feel free to ask for specific text formatting or let me know if there's anything specific you'd like to see!

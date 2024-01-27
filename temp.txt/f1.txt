@@ -1,0 +1,56 @@
+Certainly! Here's an example that uses various mathematical symbols and formatting without code blocks:
+
+# Mathematical Expressions and Formatting Example
+
+## Basic Math Operations
+- Addition: \(a + b\)
+- Subtraction: \(a - b\)
+- Multiplication: \(a \times b\) or \(a \cdot b\)
+- Division: \(\frac{a}{b}\) or \(a \div b\)
+
+## Advanced Math
+- Square Root: \(\sqrt{a}\)
+- Cube Root: \(\sqrt[3]{a}\)
+- Summation: \(\sum_{i=1}^{n} a_i\)
+- Product: \(\prod_{i=1}^{n} b_i\)
+
+## Trigonometry
+- Sine Function: \(\sin(\theta)\)
+- Cosine Function: \(\cos(\theta)\)
+- Tangent Function: \(\tan(\theta)\)
+
+## Algebraic Expressions
+- Quadratic Formula: \(x = \frac{{-b \pm \sqrt{{b^2-4ac}}}}{{2a}}\)
+- Binomial Coefficient: \({n \choose k}\)
+
+## Limits and Derivatives
+- Limit: \(\lim_{{x \to a}} f(x)\)
+- Derivative: \(\frac{{df(x)}}{{dx}}\) or \(f'(x)\)
+
+## Matrix Operations
+- Matrix Multiplication: \(A \cdot B\)
+- Determinant: \(|A|\)
+- Transposition: \(A^T\)
+
+## Statistics
+- Mean: \(\mu = \frac{1}{n} \sum_{i=1}^{n} x_i\)
+- Standard Deviation: \(\sigma = \sqrt{\frac{1}{n} \sum_{i=1}^{n} (x_i - \mu)^2}\)
+
+## Probability
+- Probability: \(P(A)\)
+- Conditional Probability: \(P(A | B)\)
+
+## Formatting
+- **Bold Text**: **This is bold text.**
+- *Italic Text*: *This is italic text.*
+- ~~Strikethrough Text~~: ~~This is strikethrough text.~~
+- Inline Code: `print("Hello, World!")`
+
+## Equations
+- Quadratic Equation:
+  \[ ax^2 + bx + c = 0 \]
+
+- Pythagorean Theorem:
+  \[ c = \sqrt{a^2 + b^2} \]
+
+Feel free to explore the different mathematical expressions and formatting styles used in this example! If you have any specific requests or questions, let me know.

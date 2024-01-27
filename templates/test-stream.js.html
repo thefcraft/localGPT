@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Streaming API Example</title>
+</head>
+<body>
+
+<div id="output">
+    <pre>Streaming data will appear here:<br></pre>
+</div>
+
+<script>
+const outputDiv = document.getElementById('output');
+
+// Replace the URL with the actual streaming API endpoint
+const apiUrl = 'http://localhost:5000/api/generate/how%20to%20convert%20a%20white%20background%20of%20an%20image%20to%20transparent';
+
+// Use the Fetch API to make a request
+fetch(apiUrl)
+    .then(response => {
+        // Check if the response has a readable stream
+        const reader = response.body.getReader();
+
+        // Read the stream and handle each chunk of data
+        return new ReadableStream({
+            start(controller) {
+                function pump() {
+                    // Read the next chunk
+                    reader.read().then(({ done, value }) => {
+                        // Check if the stream is done
+                        if (done) {
+                            console.log('Stream finished');
+                            controller.close();
+                            return;
+                        }
+                        
+                        // Convert ASCII values to characters
+                        var characters = '';
+                        for (var i = 0; i < value.length; i++) {
+                            characters+=String.fromCharCode(value[i]);
+                        }
+
+                        // Join characters and append to the outputDiv
+                        outputDiv.innerHTML += characters;  
+
+                        // Continue reading the next chunk
+                        pump();
+                    }).catch(error => {
+                        console.error('Error reading stream:', error);
+                        controller.error(error);
+                    });
+                }
+
+                // Start pumping the data
+                pump();
+            }
+        });
+    })
+    .catch(error => {
+        console.error('Error fetching data:', error);
+    });
+</script>
+
+</body>
+</html>

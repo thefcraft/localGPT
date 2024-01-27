@@ -1,0 +1,48 @@
+To convert a white background of an image to transparent, you can make use of the Python Imaging Library (PIL) provided by the `Pillow` library.
+
+Here's a simple Python script to do this:
+
+1. Install the required library if you haven't already:
+
+```bash
+pip install Pillow
+```
+
+2. Use the following code:
+
+```python
+from PIL import Image
+
+def make_background_transparent(img_path, output_path, tolerance=245):
+    """
+    Convert the white background of an image to transparent.
+
+    :param img_path: str, path to the input image.
+    :param output_path: str, path to save the output image.
+    :param tolerance: int, a value between 0 and 255 indicating how white a pixel needs to be to become transparent.
+    """
+    
+    img = Image.open(img_path)
+    
+    # Ensure the image has an alpha channel for transparency
+    img = img.convert("RGBA")
+    
+    datas = img.getdata()
+
+    new_data = []
+    for item in datas:
+        # Change all white (also shades of whites)
+        # pixels to transparent
+        if item[0] > tolerance and item[1] > tolerance and item[2] > tolerance:
+            new_data.append((255, 255, 255, 0))
+        else:
+            new_data.append(item)
+            
+    img.putdata(new_data)
+    img.save(output_path, "PNG")
+
+# Example usage:
+make_background_transparent("path_to_your_image_with_white_background.jpg", "output_image_with_transparent_background.png")
+```
+
+Replace `path_to_your_image_with_white_background.jpg` with the path to your image and it will save the output as `output_image_with_transparent_background.png`. Adjust the `tolerance` parameter if needed. The default `tolerance` of 245 will turn pixels that are very close to white to transparent. If you want only purely white pixels to be transparent, set it to 255.
