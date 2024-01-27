@@ -1,2 +1,5 @@
 # localGPT
-clone on chatgpt usign html css js and flask
+clone of chatgpt usign html css js and flask
+
+![home](icon/home.png)
+![chat](icon/chat.png)
