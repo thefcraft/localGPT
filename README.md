@@ -1,6 +1,8 @@
 # localGPT
 clone of chatgpt usign html css js and flask
 
+video demo [instagram](https://www.instagram.com/p/C0jUo3-JwdM/)
+
 ## Setup LLM
 
 - Install [LM Studio](https://lmstudio.ai/) or and other openai API compatible server
